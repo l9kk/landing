@@ -1,0 +1,185 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@400;500;600&family=Nimbus+Sans:wght@400;500;600&display=swap');
+
+/* CSS Variables */
+:root {
+  --cream: #FFFAF7;
+  --text: #5f584b;
+  --accent: #5f584b;
+}
+
+/* Reset and Base Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  font-family: "Nimbus Sans", sans-serif;
+  color: var(--text);
+  background: var(--cream);
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Main app container with scroll snap */
+.App {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.container {
+  width: min(90%, 1200px);
+  margin-inline: auto;
+  padding-inline: clamp(16px, 4vw, 32px);
+}
+
+/* Common button styles */
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 40px;
+}
+
+/* Section base styles with scroll snap */
+.sect {
+  min-height: 100vh;
+  padding-block: clamp(60px, 12vh, 140px);
+  display: flex;
+  align-items: center;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+/* First section needs top padding for fixed header */
+.sect:first-of-type {
+  padding-top: 180px;
+}
+
+/* Header and mobile download button adjustments */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  scroll-snap-align: none;
+}
+
+.mobile-download {
+  position: fixed;
+  z-index: 999;
+  scroll-snap-align: none;
+}
+
+/* Enhanced responsive design */
+@media(max-width:880px) {
+
+  /* Use proximity scroll snap for better mobile experience */
+  .App {
+    scroll-snap-type: y proximity;
+  }
+
+  .sect {
+    min-height: 100vh;
+    padding-block: clamp(40px, 8vh, 80px);
+  }
+
+  .sect:first-of-type {
+    padding-top: 160px;
+  }
+}
+
+/* Additional responsive utilities */
+@media(max-width:1200px) {
+  .container {
+    width: min(92%, 1200px);
+  }
+}
+
+@media(max-width:768px) {
+  .container {
+    width: min(95%, 1200px);
+    padding-inline: clamp(12px, 3vw, 24px);
+  }
+
+  .sect:first-of-type {
+    padding-top: 160px;
+  }
+}
+
+@media(max-width:600px) {
+  .container {
+    width: min(96%, 1200px);
+    padding-inline: clamp(8px, 2vw, 16px);
+  }
+
+  /* More flexible scroll snap for small screens */
+  .App {
+    scroll-snap-type: y proximity;
+  }
+
+  .sect {
+    scroll-snap-align: start;
+    min-height: auto;
+    min-height: 100vh;
+  }
+
+  .sect:first-of-type {
+    padding-top: 160px;
+  }
+}
+
+@media(max-width:480px) {
+
+  /* Completely disable scroll snap on very small screens */
+  .App {
+    scroll-snap-type: none;
+    overflow-y: auto;
+  }
+
+  .sect {
+    scroll-snap-align: none;
+    min-height: auto;
+  }
+
+  .sect:first-of-type {
+    padding-top: 160px;
+  }
+}
+
+/* Responsive button improvements */
+@media(max-width:768px) {
+  .btn-download {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+}
+
+@media(max-width:480px) {
+  .btn-download {
+    font-size: 13px;
+    padding: 7px 16px;
+  }
+}

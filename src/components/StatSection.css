@@ -1,0 +1,58 @@
+/* stats */
+.stat-inner {
+  text-align: center;
+  width: 100%;
+}
+
+.stat-inner h2 {
+  font-family: "Nimbus Sans", sans-serif;
+  font-weight: 600;
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+}
+
+.stat-inner p {
+  font-size: 2.2rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.stat-inner .strong {
+  font-weight: 600;
+}
+
+/* Enhanced responsive design */
+@media(max-width:1024px) {
+  .stat-inner h2 {
+    font-size: clamp(3rem, 4.5vw+1rem, 3.8rem);
+    margin-bottom: 16px;
+  }
+
+  .stat-inner p {
+    font-size: 1.5rem;
+  }
+}
+
+@media(max-width:768px) {
+  .stat-inner h2 {
+    font-size: clamp(2.5rem, 4vw+.5rem, 3.2rem);
+    margin-bottom: 14px;
+  }
+
+  .stat-inner p {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+}
+
+@media(max-width:480px) {
+  .stat-inner h2 {
+    font-size: clamp(2.2rem, 3.5vw+.5rem, 2.8rem);
+    margin-bottom: 12px;
+  }
+
+  .stat-inner p {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+  }
+}

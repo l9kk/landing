@@ -1,0 +1,38 @@
+/* mobile badge fixed at bottom-centre */
+.badge-mobile {
+  position: fixed;
+  bottom: clamp(20px, 8vh, 60px);
+  left: 50%;
+  translate: -50% 0;
+  z-index: 90;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Enhanced responsive design */
+@media(min-width:769px) {
+  .badge-mobile {
+    display: none;
+  }
+}
+
+@media(max-width:768px) {
+  .badge-mobile {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+@media(max-width:480px) {
+  .badge-mobile {
+    font-size: 13px;
+    padding: 8px 16px;
+    bottom: clamp(16px, 6vh, 40px);
+  }
+}
+
+@media(max-width:320px) {
+  .badge-mobile {
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+}

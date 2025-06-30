@@ -1,0 +1,68 @@
+/* hero */
+.hero-inner {
+  text-align: center;
+  width: 100%;
+}
+
+.hero-big {
+  font-family: "Nimbus Sans", serif;
+  font-weight: 400;
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 1;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100%;
+}
+
+.lead {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  max-width: 920px;
+  margin: 0 auto 1px;
+}
+
+.strong {
+  font-weight: 600;
+}
+
+/* Enhanced responsive design */
+@media(max-width:1024px) {
+  .hero-big {
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    margin-bottom: 30px;
+  }
+
+  .lead {
+    font-size: 1.1rem;
+    max-width: 650px;
+  }
+}
+
+@media(max-width:768px) {
+  .hero-big {
+    font-size: clamp(2.2rem, 4.5vw, 4rem);
+    margin-bottom: 24px;
+  }
+
+  .lead {
+    font-size: 1.05rem;
+    max-width: 100%;
+    margin: 0 auto 10px;
+  }
+}
+
+@media(max-width:480px) {
+  .hero-big {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+
+  .lead {
+    font-size: 1rem;
+    margin: 0 auto 8px;
+  }
+}

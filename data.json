@@ -1,0 +1,309 @@
+{
+    "website": {
+        "title": "skan - A skin expert in your pocket",
+        "favicon": "https://uploads-ssl.webflow.com/64220459a5553b3b6a386116/64220459a5553b53a3386131_favicon.png",
+        "styling": {
+            "backgroundColor": "#f9f5f2",
+            "primaryTextColor": "#333333",
+            "secondaryTextColor": "#555555",
+            "accentColor": "#4a4a4a",
+            "globalPadding": "0 20px"
+        },
+        "header": {
+            "logo": {
+                "text": "skan",
+                "imageUrl": "https://uploads-ssl.webflow.com/64220459a5553b3b6a386116/64220459a5553b76f538612f_logo.svg",
+                "styles": {
+                    "fontSize": "32px",
+                    "fontWeight": "bold",
+                    "color": "#333333"
+                }
+            },
+            "navigation": [
+                {
+                    "text": "Download App",
+                    "url": "#",
+                    "isButton": true,
+                    "icon": "apple",
+                    "styles": {
+                        "backgroundColor": "#4a4a4a",
+                        "color": "#ffffff",
+                        "borderRadius": "20px",
+                        "padding": "10px 20px",
+                        "fontSize": "16px",
+                        "fontWeight": "bold"
+                    }
+                }
+            ],
+            "styles": {
+                "display": "flex",
+                "justifyContent": "space-between",
+                "alignItems": "center",
+                "padding": "20px"
+            }
+        },
+        "sections": [
+            {
+                "type": "hero",
+                "id": "home",
+                "content": {
+                    "title": {
+                        "text": "A skin expert in your pocket.",
+                        "styles": {
+                            "fontSize": "72px",
+                            "fontWeight": "bold",
+                            "color": "#333333",
+                            "textAlign": "center",
+                            "marginBottom": "20px"
+                        }
+                    },
+                    "subtitle": {
+                        "text": "Scan your skin and get personalized skincare guidance and product recommendations. No more wasted time, no more wasted money, no more skin worries.",
+                        "styles": {
+                            "fontSize": "18px",
+                            "color": "#555555",
+                            "textAlign": "center",
+                            "marginBottom": "30px"
+                        }
+                    },
+                    "callToAction": {
+                        "text": "Make skincare easy for yourself.",
+                        "url": "#",
+                        "styles": {
+                            "fontSize": "18px",
+                            "fontWeight": "bold",
+                            "color": "#333333",
+                            "textAlign": "center"
+                        }
+                    }
+                },
+                "styles": {
+                    "padding": "100px 20px",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "alignItems": "center"
+                }
+            },
+            {
+                "type": "feature",
+                "id": "take-a-skan",
+                "layout": "text-left-image-right",
+                "content": {
+                    "title": {
+                        "text": "Take a skan",
+                        "styles": {
+                            "fontSize": "48px",
+                            "fontWeight": "bold",
+                            "color": "#333333",
+                            "marginBottom": "20px"
+                        }
+                    },
+                    "subtitle": {
+                        "text": "Reimagine your skincare experience by getting accurate analyses of your skin",
+                        "styles": {
+                            "fontSize": "18px",
+                            "color": "#555555"
+                        }
+                    },
+                    "image": {
+                        "src": "input_file_1.png",
+                        "alt": "App screenshot showing acne analysis",
+                        "styles": {
+                            "width": "400px",
+                            "height": "auto"
+                        }
+                    }
+                },
+                "styles": {
+                    "padding": "80px 20px",
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr 1fr",
+                    "gap": "50px",
+                    "alignItems": "center"
+                }
+            },
+            {
+                "type": "statistics",
+                "id": "stats-1",
+                "content": {
+                    "statistic": {
+                        "text": "9 in 10 women",
+                        "styles": {
+                            "fontSize": "48px",
+                            "fontWeight": "bold",
+                            "color": "#333333",
+                            "textAlign": "center",
+                            "marginBottom": "10px"
+                        }
+                    },
+                    "description": {
+                        "text": "experience frustration in finding skincare that works for them",
+                        "styles": {
+                            "fontSize": "18px",
+                            "color": "#555555",
+                            "textAlign": "center",
+                            "marginBottom": "20px"
+                        }
+                    },
+                    "callToAction": {
+                        "text": "Make skincare easy for yourself.",
+                        "url": "#",
+                        "styles": {
+                            "fontSize": "18px",
+                            "fontWeight": "bold",
+                            "color": "#333333",
+                            "textAlign": "center"
+                        }
+                    }
+                },
+                "styles": {
+                    "padding": "80px 20px",
+                    "textAlign": "center"
+                }
+            },
+            {
+                "type": "feature",
+                "id": "recommendations",
+                "layout": "text-left-image-right",
+                "content": {
+                    "title": {
+                        "text": "Personalized Recommendations",
+                        "styles": {
+                            "fontSize": "48px",
+                            "fontWeight": "bold",
+                            "color": "#333333",
+                            "marginBottom": "20px"
+                        }
+                    },
+                    "subtitle": {
+                        "text": "Get personalized recommendations catered to your skin",
+                        "styles": {
+                            "fontSize": "18px",
+                            "color": "#555555"
+                        }
+                    },
+                    "image": {
+                        "src": "input_file_3.png",
+                        "alt": "App screenshot showing product recommendations",
+                        "styles": {
+                            "width": "400px",
+                            "height": "auto"
+                        }
+                    }
+                },
+                "styles": {
+                    "padding": "80px 20px",
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr 1fr",
+                    "gap": "50px",
+                    "alignItems": "center"
+                }
+            },
+            {
+                "type": "statistics",
+                "id": "stats-2",
+                "content": {
+                    "statistic": {
+                        "text": "2.8 months",
+                        "styles": {
+                            "fontSize": "48px",
+                            "fontWeight": "bold",
+                            "color": "#333333",
+                            "textAlign": "center",
+                            "marginBottom": "10px"
+                        }
+                    },
+                    "description": {
+                        "text": "the average time spent trying new skincare products for results",
+                        "styles": {
+                            "fontSize": "18px",
+                            "color": "#555555",
+                            "textAlign": "center",
+                            "marginBottom": "20px"
+                        }
+                    },
+                    "callToAction": {
+                        "text": "Save your time.",
+                        "url": "#",
+                        "styles": {
+                            "fontSize": "18px",
+                            "fontWeight": "bold",
+                            "color": "#333333",
+                            "textAlign": "center"
+                        }
+                    }
+                },
+                "styles": {
+                    "padding": "80px 20px",
+                    "textAlign": "center"
+                }
+            },
+            {
+                "type": "feature",
+                "id": "track-progress",
+                "layout": "text-left-image-right",
+                "content": {
+                    "title": {
+                        "text": "Track your progress",
+                        "styles": {
+                            "fontSize": "48px",
+                            "fontWeight": "bold",
+                            "color": "#333333",
+                            "marginBottom": "20px"
+                        }
+                    },
+                    "subtitle": {
+                        "text": "No more being unsure about how your products are working. Track your skincare journey and make real progress.",
+                        "styles": {
+                            "fontSize": "18px",
+                            "color": "#555555"
+                        }
+                    },
+                    "image": {
+                        "src": "input_file_5.png",
+                        "alt": "App screenshot showing progress tracking",
+                        "styles": {
+                            "width": "400px",
+                            "height": "auto"
+                        }
+                    }
+                },
+                "styles": {
+                    "padding": "80px 20px",
+                    "display": "grid",
+                    "gridTemplateColumns": "1fr 1fr",
+                    "gap": "50px",
+                    "alignItems": "center"
+                }
+            }
+        ],
+        "footer": {
+            "links": [
+                {
+                    "text": "Privacy Policy",
+                    "url": "/privacy-policy"
+                },
+                {
+                    "text": "Terms and Conditions",
+                    "url": "/terms-and-conditions"
+                },
+                {
+                    "text": "Contact Us",
+                    "url": "/contact"
+                }
+            ],
+            "styles": {
+                "padding": "40px 20px",
+                "display": "flex",
+                "justifyContent": "center",
+                "gap": "30px",
+                "borderTop": "1px solid #dddddd"
+            },
+            "linkStyles": {
+                "fontSize": "16px",
+                "color": "#555555",
+                "textDecoration": "none"
+            }
+        }
+    }
+}

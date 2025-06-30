@@ -1,0 +1,90 @@
+/* Header - clean and minimal like the photo */
+.masthead {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 140px;
+  background: var(--cream);
+  z-index: 100;
+}
+
+.hdr-inner {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 1px;
+}
+
+.logo-text {
+  font-family: "Nimbus Sans", "Inter", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+  text-transform: lowercase;
+  transition: all 0.3s ease;
+}
+
+.logo-text:hover {
+  opacity: 0.8;
+  transform: scale(1.02);
+}
+
+/* App Store Download Button */
+.bg-primary {
+  display: inline-flex;
+  align-items: center;
+  background: var(--accent);
+  color: var(--cream);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: all 0.2s ease;
+}
+
+.bg-primary:hover {
+  background: #4a453a;
+  transform: translateY(-1px);
+}
+
+.download-svg {
+  height: 28.5px;
+  width: 166.5px;
+}
+
+/* Responsive adjustments */
+@media(min-width: 768px) {
+  .download-svg {
+    height: 38px;
+    width: 222px;
+  }
+}
+
+@media(max-width: 768px) {
+  .hdr-inner {
+    padding: 0 24px;
+  }
+
+  .logo-text {
+    font-size: 38px;
+  }
+
+  #downloadButton {
+    display: none;
+  }
+}
+
+@media(max-width: 480px) {
+  .hdr-inner {
+    padding: 0 16px;
+  }
+
+  .logo-text {
+    font-size: 32px;
+  }
+}
