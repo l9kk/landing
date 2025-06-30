@@ -26,7 +26,7 @@ function App() {
 
         {/* Statistics 1 */}
         <StatSection
-          title="9 in 10 women"
+          title="9 in 10 people"
           description="experience frustration in finding skincare that works for them"
           cta="Make skincare easy for yourself."
         />
